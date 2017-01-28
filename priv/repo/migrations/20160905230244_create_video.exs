@@ -6,11 +6,11 @@ defmodule Rumbl.Repo.Migrations.CreateVideo do
       add :url, :string
       add :title, :string
       add :description, :text
-      add :user_ud, references(:users)
+      add :user_id, references(:users)
 
       timestamps
     end
-    create index(:videos, [:user_ud])
+    create index(:videos, [:user_id])
 
   end
 end
