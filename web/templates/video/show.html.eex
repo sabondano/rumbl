@@ -4,7 +4,7 @@
 
   <li>
     <strong>User ud:</strong>
-    <%= @video.user_ud %>
+    <%= @video.user_id %>
   </li>
 
   <li>
